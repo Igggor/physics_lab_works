@@ -32,19 +32,6 @@ def get_theoretical_B(x: np.array) -> np.array:
 def get_Relative_delta(B: np.array) -> np.array:
     return B*0.03
 
-
-# def get_delta_B(B: np.array, x: np.array) -> np.array:
-#     eps_A = 0.1
-#     eps_L = 0.1
-#     eps_betta_1 = R_average**2 / (R_average**2 + L**2)*eps_L
-#     eps_betta_2 = R_average**2 * eps_L / (R_average**2 + (L-x)**2)
-#     cos_betta_1 = x / np.sqrt(x**2 + R_average**2)
-#     cos_betta_2 = (x-L) / (np.sqrt(R_average**2 + (x-L)**2))
-#     eps = np.sqrt(eps_A**2 + eps_L**2 + 0.03*0.03*(
-#         (eps_betta_1 * cos_betta_1 - eps_betta_2 * cos_betta_2)/(cos_betta_1 - cos_betta_2)
-#         )**2
-#     )
-#     return B * eps
 mu0 = 4 * np.pi * 1e-7
 
 
